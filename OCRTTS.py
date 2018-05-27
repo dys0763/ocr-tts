@@ -10,7 +10,7 @@ def ocr(img, lang='kor'):
     return text
 
 
-def tts(text, ADD_VOLUME=0, RATE=150):
+def tts(text, lang='kor+kor100', ADD_VOLUME=0, RATE=150):
     #transform a given text into speech
     #outputs the voice signal through a connected audio device
     print('Speech Synthesis Started.')
@@ -19,7 +19,10 @@ def tts(text, ADD_VOLUME=0, RATE=150):
 
     engine.setProperty('volume', volume + ADD_VOLUME) #set volume
     engine.setProperty('rate', RATE) #set voice rate(speed)
-    engine.setProperty('voice', 'f1') 
+    if lang == 'eng':
+        engine.setProperty('voice', 'f1')
+    else:
+        engine.setProperty('voice', 'fk')
 
     engine.say(text)
     engine.runAndWait()

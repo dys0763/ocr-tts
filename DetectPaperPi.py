@@ -166,8 +166,3 @@ def capture_paper(src_points, src_resolution, RESOLUTION=(1280, 1920)):
     cv2.imwrite('Paper.jpg', img_roi)
     print('Perspective Projection is Completed.')
     return img_roi
-
-'''src_points, resolution, _ = find_paper()
-print(src_points)
-img = capture_paper(src_points, resolution)
-cv2.imwrite('test.jpg', img)'''

@@ -47,7 +47,7 @@ while True:
         start_time = time.time()
         lang = 'kor+kor100'
         while not button_input:
-            if start_time - time.time() > 1: #if the botton is pushed for 1 sec, the selected language will be English
+            if time.time() - start_time > 1: #if the botton is pushed for 1 sec, the selected language will be English
                 lang = 'eng'
                 break
             button_input = GPIO.input(40)

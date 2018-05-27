@@ -11,3 +11,13 @@ Required Hardwares: Pull-Up Button(pin 40), Camera Module for Raspberry Pi, 3.5m
 
 sudo nano ~/.profile
 (sleep 10 && . /home/pi/ocr-tts/auto.sh)&
+
+--------------------------------
+
+/home/pi/
+
+sudo git clone https://github.com/dys0763/espeak-data.git
+
+--------------------------------
+
+/

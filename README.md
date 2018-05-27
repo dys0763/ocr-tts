@@ -8,7 +8,7 @@ Required Hardwares: Pull-Up Button(pin 40), Camera Module for Raspberry Pi, 3.5m
 
 
 ----------------
-You need work these process
+Required process before execute this system
 ------------------
 
 sudo nano ~/.profile

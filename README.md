@@ -14,12 +14,14 @@ You need work these process
 sudo nano ~/.profile
 (sleep 10 && . /home/pi/ocr-tts/auto.sh)&
 
-/home/pi/
+
+Location : /home/pi/
+
 sudo git clone https://github.com/dys0763/ocr-tts.git
 
 --------------------------------
 
-/home/pi/
+Location : /home/pi/
 
 sudo git clone https://github.com/dys0763/espeak-data.git
 
